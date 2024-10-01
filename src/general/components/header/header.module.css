@@ -35,6 +35,8 @@
 .rightSide {
     display: flex;
     justify-content: center;
+
+    outline: hidden;
 }
 
 
