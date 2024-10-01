@@ -11,7 +11,7 @@ const Header = () => {
                 <Search/>
             </div>
             <div className={style.rightSide}>
-                <p></p>
+                <img src={""} alt={"icon"} />
                 <p>Sign out</p>
             </div>
         </div>
