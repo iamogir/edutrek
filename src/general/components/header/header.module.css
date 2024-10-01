@@ -35,6 +35,10 @@
 .rightSide {
     display: flex;
     justify-content: center;
+
+    outline: hidden;
+    background-color: #2EA8CC;
+    align-items: end;
 }
 
 
