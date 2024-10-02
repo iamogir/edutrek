@@ -1,0 +1,47 @@
+.box {
+
+    position: relative;
+
+}
+
+.box svg {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+.in {
+    /* Layout Properties */
+    width: 326px;
+    height: 39px;
+    /* UI Properties */
+    background: rgba(248, 248, 248, 0.52) 0 0 no-repeat padding-box;
+    border-radius: 25px;
+    opacity: 1;
+    border: none;
+    color: var(--unnamed-color-f8f8f8);
+
+}
+
+.in::placeholder {
+    /* Layout Properties */
+    padding-left: 50px;
+    top: 26px;
+    left: 292px;
+    width: 49px;
+    height: 18px;
+    /* UI Properties */
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-18) var(--unnamed-font-family-ubuntu);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-f8f8f8);
+    text-align: left;
+    opacity: 1;
+}
+
+.in:focus {
+    outline: none;
+}
+
+.in:focus::placeholder {
+    color: transparent;
+}
