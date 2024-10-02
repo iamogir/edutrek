@@ -3,13 +3,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 15px;
 
     /* Layout Properties */
-    top: 0;
-    left: 0;
     width: 1366px;
     height: 70px;
-
     /* UI Properties */
     background: var(--unnamed-color-2ecc71) 0 0 no-repeat padding-box;
     opacity: 1;
@@ -31,13 +29,10 @@
 }
 
 .leftSide img {
-
     margin: 18px 19px;
-
     /* Layout Properties */
     width: 165px;
     height: 35px;
-
     /* UI Properties */
     opacity: 1;
 }
@@ -61,8 +56,6 @@
 }
 
 .rightSide p {
-    top: 24px;
-    left: 1275px;
     width: 60px;
     height: 18px;
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-18) var(--unnamed-font-family-ubuntu);
