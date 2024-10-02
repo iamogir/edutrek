@@ -6,13 +6,13 @@ import {Routes} from "react-router-dom";
 function App() {
 
   return (
-      <>
+      <div>
           <Header/>
           <Sidebar/>
           <Routes>
 
           </Routes>
-      </>
+      </div>
 
   )
 }

@@ -12,6 +12,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 :root {
@@ -25,6 +29,7 @@ body {
   --unnamed-color-d8d8d9: #D8D8D9;
   --unnamed-color-2ecc71: #2ECC71;
   --unnamed-color-f8f8f8: #f8f8f8;
+  --unnamed-color-f8f8f88e: #F8F8F88E;
   --unnamed-color-b2b3b4: #B2B3B4;
   --unnamed-color-f0856b: #F0856B;
 
