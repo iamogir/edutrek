@@ -39,6 +39,20 @@
     align-items: center;
 }
 
+.logout {
+    /*!* Layout Properties *!*/
+    /*top: 28px;*/
+    /*left: 1247px;*/
+    /*width: 15px;*/
+    /*height: 13px;*/
+    /*!* UI Properties *!*/
+    /*font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 12px/15px var(--unnamed-font-family-font-awesome-5-pro);*/
+    /*letter-spacing: var(--unnamed-character-spacing-0);*/
+    /*color: var(--unnamed-color-f8f8f8);*/
+    /*text-align: left;*/
+    /*opacity: 1;*/
+}
+
 .rightSide p {
     top: 24px;
     left: 1275px;

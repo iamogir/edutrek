@@ -2,6 +2,7 @@ import React from 'react';
 import Search from "./search/Search.tsx";
 import style from "./header.module.css"
 import logo from "../../../icons/sidebar/logo.webp"
+import LogoutIcon from "../../../icons/sidebar/logout.svg?react"
 
 const Header = () => {
     return (
@@ -11,7 +12,7 @@ const Header = () => {
                 <Search/>
             </div>
             <div className={style.rightSide}>
-                <img src={""} alt={"icon"} />
+                <span className={style.logout}><LogoutIcon/></span>
                 <p>Sign out</p>
             </div>
         </div>
