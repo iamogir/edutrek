@@ -7,7 +7,6 @@
     /* Layout Properties */
     top: 0;
     left: 0;
-    /*width: 1366px;*/
     width: 1920px;
     height: 70px;
 
@@ -29,6 +28,7 @@
     /* Layout Properties */
     width: 165px;
     height: 35px;
+
     /* UI Properties */
     opacity: 1;
 }

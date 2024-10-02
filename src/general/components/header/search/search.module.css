@@ -1,16 +1,19 @@
 .box {
-
     position: relative;
-
 }
 
-.box svg {
+.icon {
     position: absolute;
     top: 10px;
     left: 15px;
 }
 
-.in {
+.box > label:focus-within .icon {
+    display: none;
+}
+
+.box > label > input[type='text'] {
+    padding-left: 15px;
     /* Layout Properties */
     width: 326px;
     height: 39px;
@@ -23,9 +26,9 @@
 
 }
 
-.in::placeholder {
+.box > label > input[type='text']::placeholder {
     /* Layout Properties */
-    padding-left: 50px;
+    padding-left: 35px;
     top: 26px;
     left: 292px;
     width: 49px;
@@ -38,10 +41,10 @@
     opacity: 1;
 }
 
-.in:focus {
+.box > label > input[type='text']:focus {
     outline: none;
 }
 
-.in:focus::placeholder {
+.box > label > input[type='text']:focus::placeholder {
     color: transparent;
 }
