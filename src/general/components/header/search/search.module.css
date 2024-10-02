@@ -8,12 +8,12 @@
     left: 15px;
 }
 
-.box > label:focus-within .icon {
-    display: none;
-}
+/*.box > label:focus-within .icon {*/
+/*    display: none;*/
+/*}*/
 
 .box > label > input[type='text'] {
-    padding-left: 15px;
+    padding-left: 50px;
     /* Layout Properties */
     width: 326px;
     height: 39px;
@@ -23,12 +23,13 @@
     opacity: 1;
     border: none;
     color: var(--unnamed-color-f8f8f8);
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-18) var(--unnamed-font-family-ubuntu);
+    letter-spacing: var(--unnamed-character-spacing-0);
 
 }
 
 .box > label > input[type='text']::placeholder {
     /* Layout Properties */
-    padding-left: 35px;
     top: 26px;
     left: 292px;
     width: 49px;
