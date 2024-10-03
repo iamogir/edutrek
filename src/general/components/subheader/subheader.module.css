@@ -19,7 +19,13 @@
 
 }
 
-.selectBox > p,
+.statusHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.statusHead,
 .selectBox > ul {
     width: 168px;
     position: absolute;
@@ -29,7 +35,7 @@
     text-align: end;
 }
 
-.selectBox > p {
+.statusHead {
     top: -34px;
     padding-bottom: 7px;
     padding-right: 6px;
