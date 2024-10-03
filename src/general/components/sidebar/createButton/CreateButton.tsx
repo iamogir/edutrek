@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import style from "./createButton.module.css"
-import CreateIcon from "../../../../icons/sidebar/create.svg?react"
+import CreateIcon from "../../../../icons/header/create.svg?react"
 
 const CreateButton = () => {
 

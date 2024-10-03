@@ -1,6 +1,8 @@
 import React from 'react';
 import CreateButton from "./createButton/CreateButton.tsx";
 import {sidebarItems} from "../../utils/constants.ts";
+import SidebarItem from "./sidebarItem/SidebarItem.tsx";
+import style from "./sidebar.module.css"
 
 const Sidebar = () => {
     return (
@@ -8,7 +10,9 @@ const Sidebar = () => {
             <div>
                 <CreateButton/>
             </div>
-            {sidebarItems.map(el => <div>{el.title}</div>)}
+            <div className={style.block}>
+                {sidebarItems.map(el => <SidebarItem item={el.title} Icon={el.Icon}/>)}
+            </div>
         </div>
     );
 };
