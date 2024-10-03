@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Search from "./search/Search.tsx";
 import style from "./header.module.css"
-import logo from "../../../icons/header/logo.webp"
+import logo from "../../../images/header/logo.webp"
 import LogoutIcon from "../../../icons/header/logout.svg?react"
 import {Link} from "react-router-dom";
 
