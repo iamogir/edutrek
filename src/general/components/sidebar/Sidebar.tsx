@@ -11,7 +11,7 @@ const Sidebar = () => {
                 <CreateButton/>
             </div>
             <div className={style.block}>
-                {sidebarItems.map(el => <SidebarItem item={el.title} Icon={el.Icon}/>)}
+                {sidebarItems.map(el => <SidebarItem item={el}/>)}
             </div>
         </div>
     );

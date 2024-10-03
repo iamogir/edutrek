@@ -1,19 +1,22 @@
 import React from 'react';
 import style from "./sidebarItem.module.css"
+import {Link} from "react-router-dom";
+import {Item} from "../../../interfaces.ts";
 
 interface Props {
-    item: string
-    Icon: React.FC
+    item: Item
 }
 
-const SidebarItem = ({item, Icon}:Props) => {
+const SidebarItem = ({item}:Props) => {
     return (
-        <div className={style.box}>
-            <div className={style.boxContent}>
-                <Icon/>
-                <span>{item}</span>
+        <Link to={"/" + item.route}>
+            <div className={style.box}>
+                <div className={style.boxContent}>
+                    <item.Icon/>
+                    <span>{item.title}</span>
+                </div>
             </div>
-        </div>
+        </Link>
     );
 };
 
