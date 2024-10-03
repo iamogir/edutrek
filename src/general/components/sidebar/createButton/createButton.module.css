@@ -1,0 +1,40 @@
+.block {
+    /* Layout Properties */
+    width: 122px;
+    height: 50px;
+    /* UI Properties */
+    background: var(--unnamed-color-2ecc71) 0 0 no-repeat padding-box;
+    border-radius: 25px;
+    opacity: 1;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 19px;
+    margin-left: 19px;
+}
+
+.block:hover {
+    background: rgba(46, 204, 113, 0.87);
+    cursor: pointer;
+}
+
+.block:hover > .text {
+    color: var(--unnamed-color-f8f8f88e);
+}
+
+.createIcon {
+    /* UI Properties */
+    text-align: center;
+    opacity: 1;
+}
+
+.text {
+    /* UI Properties */
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-27) var(--unnamed-font-family-ubuntu);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-f8f8f8);
+    text-align: center;
+    opacity: 1;
+}
+

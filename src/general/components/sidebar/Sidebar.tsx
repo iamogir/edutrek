@@ -1,18 +1,26 @@
 import React from 'react';
-import Active from "../../../modules/active/presentation/pages/Active.tsx";
-import Contacts from "../../../modules/contacts/presentation/pages/Contacts.tsx";
-import Students from "../../../modules/students/presentation/pages/Students.tsx";
-import Lecturers from "../../../modules/lecturers/presentation/pages/Lecturers.tsx";
-import Groups from "../../../modules/groups/presentation/pages/Groups.tsx";
+import CreateButton from "./createButton/CreateButton.tsx";
+import {sidebarItems} from "../../utils/constants.ts";
+import SidebarItem from "./sidebarItem/SidebarItem.tsx";
+import style from "./sidebar.module.css"
+import {NavLink} from "react-router-dom";
 
 const Sidebar = () => {
     return (
         <div>
-            <Active/>
-            <Contacts/>
-            <Groups/>
-            <Students/>
-            <Lecturers/>
+            <div>
+                <CreateButton/>
+            </div>
+            <ul className={style.block}>
+                {sidebarItems.map(el =>
+                    <NavLink to={"/" + el.route} key={el.route}>
+                        {(stateLink) => (
+                            <SidebarItem item={el} stateLink={stateLink}/>
+                        )}
+
+                    </NavLink>
+                )}
+            </ul>
         </div>
     );
 };

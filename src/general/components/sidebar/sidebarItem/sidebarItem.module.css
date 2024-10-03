@@ -1,0 +1,54 @@
+.box {
+    /* Layout Properties */
+    width: 225px;
+    height: 40px;
+    /* UI Properties */
+    background: rgba(46, 204, 113, 0.21) 0 0 no-repeat padding-box;
+    border-radius: 0 25px 25px 0;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 36px;
+}
+
+.box:hover {
+    background: var(--unnamed-color-2ecc71) 0 0 no-repeat padding-box;
+}
+
+.boxContent {
+    width: 100px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.boxContent > span {
+    /* Layout Properties */
+    /*width: 52px;*/
+    /*height: 18px;*/
+    /* UI Properties */
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-18) var(--unnamed-font-family-ubuntu);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    opacity: 1;
+    margin-left: 13px;
+    color: var(--unnamed-color-2ecc71);
+}
+
+.box:hover > .boxContent > span {
+    color: var(--unnamed-color-f8f8f8);
+}
+
+.active {
+    background: var(--unnamed-color-2ecc71) 0 0 no-repeat padding-box;
+}
+
+.active > .boxContent > span {
+    color: var(--unnamed-color-f8f8f8);
+}
+
+.lnk.active > .box {
+    border: 2px solid red;
+}
+

@@ -1,6 +1,6 @@
 import React from 'react';
 import style from "./search.module.css"
-import SearchIcon from "../../../../icons/sidebar/search.svg?react"
+import SearchIcon from "../../../../icons/header/search.svg?react"
 
 const Search = () => {
     return (
