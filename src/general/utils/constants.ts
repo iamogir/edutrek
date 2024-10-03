@@ -2,7 +2,7 @@ import {Item} from "../interfaces.ts";
 import ActiveIcon from "../../icons/sidebar/active.svg?react";
 import ContactsIcon from "../../icons/sidebar/contacts.svg?react";
 import GroupsIcon from "../../icons/sidebar/groups.svg?react";
-import StudentsIcon from "../../icons/sidebar/groups.svg?react";
+import StudentsIcon from "../../icons/sidebar/students.svg?react";
 import LecturersIcon from "../../icons/sidebar/lecturers.svg?react";
 
 

@@ -9,8 +9,10 @@ interface Props {
 const SidebarItem = ({item, Icon}:Props) => {
     return (
         <div className={style.box}>
-            <Icon/>
-            <span>{item}</span>
+            <div className={style.boxContent}>
+                <Icon/>
+                <span>{item}</span>
+            </div>
         </div>
     );
 };
