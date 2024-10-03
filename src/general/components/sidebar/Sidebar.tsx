@@ -1,10 +1,6 @@
 import React from 'react';
-import Active from "../../../modules/active/presentation/pages/Active.tsx";
-import Contacts from "../../../modules/contacts/presentation/pages/Contacts.tsx";
-import Students from "../../../modules/students/presentation/pages/Students.tsx";
-import Lecturers from "../../../modules/lecturers/presentation/pages/Lecturers.tsx";
-import Groups from "../../../modules/groups/presentation/pages/Groups.tsx";
 import CreateButton from "./createButton/CreateButton.tsx";
+import {sidebarItems} from "../../utils/constants.ts";
 
 const Sidebar = () => {
     return (
@@ -12,11 +8,7 @@ const Sidebar = () => {
             <div>
                 <CreateButton/>
             </div>
-            <Active/>
-            <Contacts/>
-            <Groups/>
-            <Students/>
-            <Lecturers/>
+            {sidebarItems.map(el => <div>{el.title}</div>)}
         </div>
     );
 };
