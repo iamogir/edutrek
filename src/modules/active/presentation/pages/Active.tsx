@@ -1,8 +1,9 @@
 import React from 'react';
+import style from "./active.module.css";
 
 const Active = () => {
     return (
-       <div>active</div>
+       <div className={style.box}>active</div>
     );
 };
 

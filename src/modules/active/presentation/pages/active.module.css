@@ -1,0 +1,8 @@
+.box {
+    /* Layout Properties */
+    width: 0;
+    height: 618px;
+    /* UI Properties */
+    border: 0.5px solid rgba(112, 112, 112, 0.29);
+    opacity: 1;
+}
