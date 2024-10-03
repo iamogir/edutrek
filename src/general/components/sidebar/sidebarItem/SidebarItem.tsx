@@ -1,22 +1,21 @@
 import React from 'react';
 import style from "./sidebarItem.module.css"
-import {Link} from "react-router-dom";
 import {Item} from "../../../interfaces.ts";
 
 interface Props {
-    item: Item
+    item: Item,
+    isActive: boolean
 }
 
-const SidebarItem = ({item}:Props) => {
+const SidebarItem = ({item, isActive}:Props) => {
+
     return (
-        <Link to={"/" + item.route}>
-            <div className={style.box}>
+            <li className={`${style.box} ${isActive ? style.active : ""}`}>
                 <div className={style.boxContent}>
                     <item.Icon/>
                     <span>{item.title}</span>
                 </div>
-            </div>
-        </Link>
+            </li>
     );
 };
 
