@@ -48,3 +48,7 @@
     color: var(--unnamed-color-f8f8f8);
 }
 
+.lnk.active > .box {
+    border: 2px solid red;
+}
+
