@@ -10,13 +10,14 @@ const Subheader = ({children}: Props) => {
     return (
         <div>
             <div className={style.subheadBox}>
-                <form>
-                    <select id={"status"} name={"status"}>
+                <div className={style.selectBox}>
+                    <p>Status</p>
+                    <ul>
                         {statusArr.map(el =>
-                            <option key={el.statusId} value={el.statusId}>{el.statusName}</option>
+                            <li key={el.statusId} value={el.statusId}>{el.statusName}</li>
                         )}
-                    </select>
-                </form>
+                    </ul>
+                </div>
             </div>
             {children}
         </div>

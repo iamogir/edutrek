@@ -10,9 +10,43 @@
     display: flex;
     justify-content: end;
     align-items: end;
+
 }
 
-.subheadBox > form > select {
-    margin-bottom: 9px;
-    margin-right: 37px;
+.subheadBox > .selectBox {
+    position: relative;
+    background-color: #2EA8CC;
+
+}
+
+.selectBox > p,
+.selectBox > ul {
+    width: 168px;
+    position: absolute;
+    left: -205px;
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    opacity: 1;
+    text-align: end;
+}
+
+.selectBox > p {
+    top: -34px;
+    padding-bottom: 7px;
+    padding-right: 6px;
+    padding-top: 5px;
+}
+
+.selectBox > ul {
+    top: -10px;
+}
+
+.selectBox > ul > li {
+    list-style-type: none;
+    margin-right: 6px;
+    margin-bottom: 7px;
+    margin-top: 5px;
+}
+
+.selectBox > ul:first-child {
+    padding-top: 7px;
 }
