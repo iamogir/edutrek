@@ -3,7 +3,7 @@ import CreateButton from "./createButton/CreateButton.tsx";
 import {sidebarItems} from "../../utils/constants.ts";
 import SidebarItem from "./sidebarItem/SidebarItem.tsx";
 import style from "./sidebar.module.css"
-import {Link, useLocation} from "react-router-dom";
+import {Link, NavLink, useLocation} from "react-router-dom";
 
 const Sidebar = () => {
 
@@ -17,9 +17,9 @@ const Sidebar = () => {
             </div>
             <ul className={style.block}>
                 {sidebarItems.map(el =>
-                    <Link to={"/" + el.route}>
+                    <NavLink to={"/" + el.route}>
                         <SidebarItem item={el} isActive={path === "/" + el.route} key={el.route}/>
-                    </Link>
+                    </NavLink>
                 )}
             </ul>
         </div>

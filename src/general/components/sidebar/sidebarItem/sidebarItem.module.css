@@ -12,6 +12,10 @@
     padding-left: 36px;
 }
 
+.box:hover {
+    background: var(--unnamed-color-2ecc71) 0 0 no-repeat padding-box;
+}
+
 .boxContent {
     width: 100px;
     display: flex;
@@ -32,8 +36,8 @@
     color: var(--unnamed-color-2ecc71);
 }
 
-a {
-    text-decoration: none;
+.box:hover > .boxContent > span {
+    color: var(--unnamed-color-f8f8f8);
 }
 
 .active {
@@ -43,3 +47,4 @@ a {
 .active > .boxContent > span {
     color: var(--unnamed-color-f8f8f8);
 }
+
