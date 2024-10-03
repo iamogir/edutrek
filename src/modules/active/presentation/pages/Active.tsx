@@ -2,9 +2,7 @@ import React from 'react';
 
 const Active = () => {
     return (
-        <div>
-            Active
-        </div>
+       <div>active</div>
     );
 };
 
