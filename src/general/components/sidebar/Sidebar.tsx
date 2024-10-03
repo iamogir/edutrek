@@ -13,9 +13,9 @@ const Sidebar = () => {
             </div>
             <ul className={style.block}>
                 {sidebarItems.map(el =>
-                    <NavLink to={"/" + el.route}>
+                    <NavLink to={"/" + el.route} key={el.route}>
                         {(stateLink) => (
-                            <SidebarItem item={el} stateLink={stateLink} key={el.route}/>
+                            <SidebarItem item={el} stateLink={stateLink}/>
                         )}
 
                     </NavLink>
