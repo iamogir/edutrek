@@ -27,9 +27,9 @@ body {
   --save-for-later: #CCB42E;
   --unnamed-color-2b2d2f: #2B2D2F;
   --unnamed-color-d8d8d9: #D8D8D9;
-  --unnamed-color-2ecc71: #2ECC71;
+  --unnamed-color-2ecc71: rgb(46, 204, 113);
   --unnamed-color-f8f8f8: #f8f8f8;
-  --unnamed-color-f8f8f88e: #F8F8F88E;
+  --unnamed-color-f8f8f88e: rgba(248, 248, 248, 0.56);
   --unnamed-color-b2b3b4: #B2B3B4;
   --unnamed-color-f0856b: #F0856B;
 
