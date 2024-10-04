@@ -1,7 +1,7 @@
 import './App.css'
 import Header from "./general/components/header/Header.tsx";
 import Sidebar from "./general/components/sidebar/Sidebar.tsx";
-import {Route, Routes} from "react-router-dom";
+import {Navigate, Route, Routes} from "react-router-dom";
 import Active from "./modules/active/presentation/pages/Active.tsx";
 import Contacts from "./modules/contacts/presentation/pages/Contacts.tsx";
 import Groups from "./modules/groups/presentation/pages/Groups.tsx";
@@ -18,6 +18,7 @@ function App() {
               <Sidebar/>
               <Subheader>
                   <Routes>
+                      <Route path="/" element={<Navigate to={"/active"} replace/>}/>
                       <Route path={"/active"} element={<Active/>}/>
                       <Route path={"/contacts"} element={<Contacts/>}/>
                       <Route path={"/groups"} element={<Groups/>}/>
