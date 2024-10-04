@@ -41,11 +41,11 @@
     padding-bottom: 7px;
     padding-right: 6px;
     padding-top: 5px;
+    cursor: pointer;
 }
 
 .selectBox > ul {
     top: -8px;
-
     display: none;
 }
 
@@ -54,6 +54,12 @@
     margin-right: 6px;
     margin-bottom: 7px;
     margin-top: 5px;
+
+    cursor: pointer;
+}
+
+.selectBox > ul > li:hover {
+background-color: #2EA8CC;
 }
 
 .selectBox > ul > li,

@@ -4,15 +4,17 @@ import {statusArr} from "../../../modules/active/presentation/constants.ts";
 import ArrowIcon from "../../../icons/subheader/arrow-down.svg?react";
 
 interface Props {
-    children: React.ReactNode
+    children: React.ReactNode,
+    openCloseMenuHandler: (event: React.MouseEvent<HTMLElement>) => void
 }
 
-const Subheader = ({children}: Props) => {
+const Subheader = ({children, openCloseMenuHandler}: Props) => {
     return (
         <div>
             <div className={style.subheadBox}>
                 <div className={style.selectBox}>
-                    <div className={style.statusHead}>
+                    <input type={'hidden'} name={'status'} value={""}/>
+                    <div className={`${style.statusHead} topMenu`} onClick={openCloseMenuHandler}>
                         <ArrowIcon/>
                         Status
                     </div>
