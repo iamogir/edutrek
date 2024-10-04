@@ -37,13 +37,16 @@
 
 .statusHead {
     top: -34px;
+    height: 25px;
     padding-bottom: 7px;
     padding-right: 6px;
     padding-top: 5px;
 }
 
 .selectBox > ul {
-    top: -10px;
+    top: -8px;
+
+    display: none;
 }
 
 .selectBox > ul > li {
@@ -53,6 +56,13 @@
     margin-top: 5px;
 }
 
-.selectBox > ul:first-child {
-    padding-top: 7px;
+.selectBox > ul > li,
+.statusHead {
+    /* UI Properties */
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-16) var(--unnamed-font-family-ubuntu);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-2b2d2f);
+    text-align: right;
+    opacity: 1;
+
 }
