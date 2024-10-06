@@ -9,6 +9,8 @@ const Header = () => {
 
     const [isHover, setIsHover] = useState(false);
 
+    const Logo = () => (<img src={"../../../images/header/logo.webp"} alt={"logo"}/>);
+
     return (
         <div className={style.box}>
             <div className={style.leftSide}>
