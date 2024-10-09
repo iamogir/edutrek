@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Search from "./search/Search.tsx";
 import style from "./header.module.css"
-import logo from "../../../images/header/logo.webp"
+import Logo from "../../../icons/header/logo.svg?react"
 import LogoutIcon from "../../../icons/header/logout.svg?react"
 import {Link} from "react-router-dom";
 
@@ -12,7 +12,7 @@ const Header = () => {
     return (
         <div className={style.box}>
             <div className={style.leftSide}>
-                <img src={logo} alt={"logo"}/>
+                <span className={style.header_logo}><Logo/></span>
                 <Search/>
             </div>
             <Link to={"#"} className={style.rightSide} onMouseOver={() => setIsHover(true)}
