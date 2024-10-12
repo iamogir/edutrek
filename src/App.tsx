@@ -8,22 +8,10 @@ import Groups from "./modules/groups/presentation/pages/Groups.tsx";
 import Students from "./modules/students/presentation/pages/Students.tsx";
 import Lecturers from "./modules/lecturers/presentation/pages/Lecturers.tsx";
 import Subheader from "./general/components/subheader/Subheader.tsx";
-import constStyle from "./general/utils/const.module.css"
 import React from "react";
-
-// const openCloseMenuHandler = (event: React.MouseEvent<HTMLElement>) => {
-//     const eventTarget = event.target as Element;
-//     const nextSibling = eventTarget.nextElementSibling as Element;
-//
-//     if (eventTarget.parentElement.classList.contains("topMenu")) {
-//        const parent = eventTarget.parentElement.nextSibling as Element;
-//            parent.classList.toggle(constStyle.open);
-//     }
-//     else {
-//         nextSibling.classList.toggle(constStyle.open);
-//     }
-//
-// }
+import {useDispatch, useSelector} from "react-redux";
+import {AppStore, DropMenuState} from "./general/redux/types.ts";
+import {setExternalClick} from "./general/redux/slices/dropMenuSlice.ts";
 
 function App() {
 

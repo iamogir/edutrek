@@ -9,7 +9,6 @@ interface Props {
 }
 
 const Subheader = ({children}: Props) => {
-
     const location = useLocation();
 
     return (

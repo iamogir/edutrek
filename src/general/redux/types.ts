@@ -3,5 +3,5 @@ export type AppStore = {
 }
 
 export type DropMenuState = {
-    isOpen: boolean
+    isOpenMenu: boolean
 }

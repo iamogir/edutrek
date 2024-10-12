@@ -4,11 +4,11 @@ import {DropMenuState} from "../types.ts";
 const dropMenuSlice = createSlice<DropMenuState, SliceCaseReducers<DropMenuState>>({
     name: "dropMenu",
     initialState: {
-        isOpen: false
+        isOpenMenu: false
     },
     reducers: {
         openCloseMenu: (state) => {
-            state.isOpen ? state.isOpen = false : state.isOpen = true;
+            state.isOpenMenu ? state.isOpenMenu = false : state.isOpenMenu = true;
         }
     }
 })
