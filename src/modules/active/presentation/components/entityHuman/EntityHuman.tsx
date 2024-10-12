@@ -9,21 +9,26 @@ interface Props {
 
 const EntityHuman = ({serial}: Props) => {
 
-    let name: string = "lol lolov";
+    let name: string = "Name Surname";
 
     return (
         <div className={style.box}>
             <div className={style.header}>
                 <div>
                     <Point/>
-                    <p>{name}</p>
+                    <p className={style.name}>{name}</p>
                 </div>
-                <Alarm  num={serial}/>
+                <Alarm  serial={serial}/>
             </div>
             <div className={style.body}>
-                num
-                ad
-                tel
+                <div>
+                    <p>num</p>
+                    <p>em ad</p>
+                </div>
+                <div>
+                    <p>loc</p>
+                    <p>FSD</p>
+                </div>
             </div>
         </div>
     );
