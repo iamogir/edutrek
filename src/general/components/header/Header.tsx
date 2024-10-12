@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import Search from "./search/Search.tsx";
 import style from "./header.module.css"
 import Logo from "../../../icons/header/logo.svg"
-import LogoutIcon from "../../../icons/header/logout.svg?react"
+import LogoutIcon from "../../../icons/header/logout.svg"
 import {Link} from "react-router-dom";
 
 const Header = () => {
