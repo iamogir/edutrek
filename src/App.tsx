@@ -32,7 +32,7 @@ function App() {
           <Header/>
           <div className={"contentBody"}>
               <Sidebar/>
-              <Subheader openCloseMenuHandler={openCloseMenuHandler}>
+              <Subheader>
                   <Routes>
                       <Route path="/" element={<Navigate to={"/active"} replace/>}/>
                       <Route path={"/active"} element={<Active/>}/>
