@@ -11,19 +11,19 @@ import Subheader from "./general/components/subheader/Subheader.tsx";
 import constStyle from "./general/utils/const.module.css"
 import React from "react";
 
-const openCloseMenuHandler = (event: React.MouseEvent<HTMLElement>) => {
-    const eventTarget = event.target as Element;
-    const nextSibling = eventTarget.nextElementSibling as Element;
-
-    if (eventTarget.parentElement.classList.contains("topMenu")) {
-       const parent = eventTarget.parentElement.nextSibling as Element;
-           parent.classList.toggle(constStyle.open);
-    }
-    else {
-        nextSibling.classList.toggle(constStyle.open);
-    }
-
-}
+// const openCloseMenuHandler = (event: React.MouseEvent<HTMLElement>) => {
+//     const eventTarget = event.target as Element;
+//     const nextSibling = eventTarget.nextElementSibling as Element;
+//
+//     if (eventTarget.parentElement.classList.contains("topMenu")) {
+//        const parent = eventTarget.parentElement.nextSibling as Element;
+//            parent.classList.toggle(constStyle.open);
+//     }
+//     else {
+//         nextSibling.classList.toggle(constStyle.open);
+//     }
+//
+// }
 
 function App() {
 

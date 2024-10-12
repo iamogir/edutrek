@@ -10,20 +10,8 @@ const Subheader = ({children}: Props) => {
     return (
         <div>
             <div className={style.subheadBox}>
-                {/*<div className={style.selectBox}>*/}
-                {/*    <input type={'hidden'} name={'status'} value={""}/>*/}
-                {/*    <div className={`${style.statusHead} topMenu`} onClick={openCloseMenuHandler}>*/}
-                {/*        <ArrowIcon/>*/}
-                {/*        Status*/}
-                {/*    </div>*/}
-                {/*    <ul>*/}
-                {/*        {statusArr.map(el =>*/}
-                {/*            <li key={el.statusId} value={el.statusId}>{el.statusName}</li>*/}
-                {/*        )}*/}
-                {/*    </ul>*/}
-                {/*</div>*/}
-                <DropMenu/>
-                <DropMenu/>
+                <DropMenu name={"Group"}/>
+                <DropMenu name={"Status"}/>
             </div>
             {children}
         </div>

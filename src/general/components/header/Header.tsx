@@ -8,7 +8,6 @@ import {Link} from "react-router-dom";
 const Header = () => {
 
     const [isHover, setIsHover] = useState(false);
-
     const Logo = () => (<img src={"../../../images/header/logo.webp"} alt={"logo"}/>);
 
     return (
