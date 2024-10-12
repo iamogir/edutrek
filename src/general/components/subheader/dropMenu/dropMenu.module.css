@@ -1,0 +1,58 @@
+.selectBox {
+    position: relative;
+    background-color: #2EA8CC;
+}
+
+.statusHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.statusHead,
+.selectBox > ul {
+    width: 168px;
+    position: absolute;
+    left: -205px;
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    opacity: 1;
+    text-align: end;
+}
+
+.statusHead {
+    top: -34px;
+    height: 25px;
+    padding-bottom: 7px;
+    padding-right: 6px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.selectBox > ul {
+    top: -8px;
+    display: none;
+}
+
+.selectBox > ul > li {
+    list-style-type: none;
+    margin-right: 6px;
+    margin-bottom: 7px;
+    margin-top: 5px;
+
+    cursor: pointer;
+}
+
+.selectBox > ul > li:hover {
+    background-color: #2EA8CC;
+}
+
+.selectBox > ul > li,
+.statusHead {
+    /* UI Properties */
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-16) var(--unnamed-font-family-ubuntu);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-2b2d2f);
+    text-align: right;
+    opacity: 1;
+
+}

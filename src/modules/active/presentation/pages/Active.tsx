@@ -1,10 +1,9 @@
 import React from 'react';
+import style from "./active.module.css";
 
 const Active = () => {
     return (
-        <div>
-            Active
-        </div>
+       <div>active</div>
     );
 };
 

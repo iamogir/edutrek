@@ -5,10 +5,11 @@
 .icon {
     position: absolute;
     top: 10px;
-    left: 15px;
+    left: 86px;
 }
 
 .box > label > input[type='text'] {
+    margin-left: 71px;
     padding-left: 50px;
     /* Layout Properties */
     width: 326px;

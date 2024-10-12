@@ -1,0 +1,25 @@
+.subheadBox {
+    /* Layout Properties */
+    width: 1093px;
+    height: 50px;
+    /* UI Properties */
+    background: #3EB470 0 0 no-repeat padding-box;
+    border-radius: 25px 25px 0 0;
+    opacity: 1;
+
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 197px;
+
+}
+
+.line {
+    margin-top: 15.5px;
+    /* Layout Properties */
+    width: 0;
+    height: 100%;
+    /* UI Properties */
+    border: 0.5px solid rgba(112, 112, 112, 0.29);
+    opacity: 1;
+}
