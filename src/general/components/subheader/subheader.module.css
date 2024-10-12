@@ -13,3 +13,13 @@
     gap: 197px;
 
 }
+
+.line {
+    margin-top: 15.5px;
+    /* Layout Properties */
+    width: 0;
+    height: 100%;
+    /* UI Properties */
+    border: 0.5px solid rgba(112, 112, 112, 0.29);
+    opacity: 1;
+}
