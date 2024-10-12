@@ -3,12 +3,14 @@ import ArrowIcon from "../../../../icons/subheader/arrow-down.svg?react";
 import {statusArr} from "../../../../modules/active/presentation/constants.ts";
 import constStyle from "../../../utils/const.module.css";
 import style from "./dropMenu.module.css";
+import DropList from "../../../../modules/active/presentation/redux/types.ts";
 
 interface Props {
-    name: string
+    name: string,
+    list: DropList[]
 }
 
-const DropMenu = ({name}: Props) => {
+const DropMenu = ({name, list}: Props) => {
     const [isOpenM, setIsOpenM] = useState(false);
 
     return (
@@ -19,8 +21,8 @@ const DropMenu = ({name}: Props) => {
                 {name}
             </div>
             <ul className={`${ isOpenM ? constStyle.open : ""}`}>
-                {statusArr.map(el =>
-                    <li key={el.statusId} value={el.statusId}>{el.statusName}</li>
+                {list.map(el =>
+                    <li key={el.id} value={el.id}>{el.name}</li>
                 )}
             </ul>
         </div>

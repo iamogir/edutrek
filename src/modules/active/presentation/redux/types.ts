@@ -1,20 +1,20 @@
-export default class Status {
+export default class DropList {
 
     constructor(
-        public readonly statusId: number,
-        public readonly statusName: string
+        public readonly id: number,
+        public readonly name: string
     ) {
-        this.statusId = statusId;
-        this.statusName = statusName;
+        this.id = id;
+        this.name = name;
     }
 
-    static fromJson(json: string): Status {
+    static fromJson(json: string): DropList {
         const obj = JSON.parse(json);
-        return Status.fromServerObject(obj);
+        return DropList.fromServerObject(obj);
     }
 
-    static fromServerObject(obj: Status): Status {
-        return new Status(obj.statusId, obj.statusName);
+    static fromServerObject(obj: DropList): DropList {
+        return new DropList(obj.id, obj.name);
     }
 
 }

@@ -1,28 +1,67 @@
-import Status from "./redux/types.ts";
+import DropList from "./redux/types.ts";
 
-export const statusArr: Status[] = [
+export const statusArr: DropList[] = [
     {
-        "statusId": 1,
-        "statusName": "Lead"
+        id: 1,
+        name: "Lead"
     },
     {
-        "statusId": 2,
-        "statusName": "In work"
+        id: 2,
+        name: "In work"
     },
     {
-        "statusId": 3,
-        "statusName": "Consultation"
+        id: 3,
+        name: "Consultation"
     },
     {
-        "statusId": 4,
-        "statusName": "Save for later"
+        id: 4,
+        name: "Save for later"
     },
     {
-        "statusId": 5,
-        "statusName": "Student"
+        id: 5,
+        name: "Student"
     },
     {
-        "statusId": 6,
-        "statusName": "Archive"
+        id: 6,
+        name: "Archive"
+    }
+]
+
+export const groupArr: DropList[] = [
+    {
+        id: 1,
+        name: "BP-107 Rehovot"
+    },
+    {
+        id: 2,
+        name: "BP-108 Rehovot"
+    },
+    {
+        id: 3,
+        name: "FSD-87 Rehovot"
+    },
+    {
+        id: 4,
+        name: "FSD-89 Rehovot"
+    },
+    {
+        id: 5,
+        name: "FSD-90 Rehovot"
+    },
+    {
+        id: 6,
+        name: "BP-55 Haifa"
+    },
+    {
+        id: 7,
+        name: "BP-56 Haifa"
+    },
+    {
+        id: 8,
+        name: "QA-99 Rehovot"
+    },
+    {
+        id: 9,
+        name: "QA-34 Rehovot"
     }
 ]
