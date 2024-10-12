@@ -9,9 +9,6 @@ import Students from "./modules/students/presentation/pages/Students.tsx";
 import Lecturers from "./modules/lecturers/presentation/pages/Lecturers.tsx";
 import Subheader from "./general/components/subheader/Subheader.tsx";
 import React from "react";
-import {useDispatch, useSelector} from "react-redux";
-import {AppStore, DropMenuState} from "./general/redux/types.ts";
-import {setExternalClick} from "./general/redux/slices/dropMenuSlice.ts";
 
 function App() {
 

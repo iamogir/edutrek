@@ -23,7 +23,6 @@ const DropMenu = ({name, list}: Props) => {
         const eventTarget = event.target as Element;
 
         if (refCurrent && !refParent.contains(eventTarget)) {
-            console.log("Listener")
             refCurrent.classList.remove(constStyle.open);
         }
     }
