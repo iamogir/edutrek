@@ -17,8 +17,9 @@ const Subheader = ({children}: Props) => {
                 {location.pathname === "/active" ? <></> : <DropMenu name={"Group"} list={groupArr}/>}
                 <DropMenu name={"Status"} list={statusArr}/>
             </div>
-            <div className={style.line}>
-            {children}
+            <div className={style.body}>
+                <div className={style.line}></div>
+                <div className={style.content}>{children}</div>
             </div>
         </div>
     );
