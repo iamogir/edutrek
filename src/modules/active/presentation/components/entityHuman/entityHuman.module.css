@@ -2,9 +2,18 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    /*width: 100%;*/
+    border-bottom: 0.5px solid #707070;
 }
 .header {
     display: flex;
     justify-content: center;
+}
+
+.line {
+    /* Layout Properties */
+    width: 1065px;
+    height: 85px;
+    /* UI Properties */
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    opacity: 1;
 }

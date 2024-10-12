@@ -18,8 +18,7 @@ const Subheader = ({children}: Props) => {
                 <DropMenu name={"Status"} list={statusArr}/>
             </div>
             <div className={style.body}>
-                <div className={style.line}></div>
-                <div className={style.content}>{children}</div>
+                {children}
             </div>
         </div>
     );
