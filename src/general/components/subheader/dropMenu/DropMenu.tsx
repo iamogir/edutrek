@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import ArrowIcon from "../../../../icons/subheader/arrow-down.svg?react";
-import {statusArr} from "../../../../modules/active/presentation/constants.ts";
 import constStyle from "../../../utils/const.module.css";
 import style from "./dropMenu.module.css";
 import DropList from "../../../../modules/active/presentation/redux/types.ts";
