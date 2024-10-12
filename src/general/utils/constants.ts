@@ -1,9 +1,9 @@
 import {Item} from "../interfaces.ts";
-import ActiveIcon from "../../icons/sidebar/active.svg?react";
-import ContactsIcon from "../../icons/sidebar/contacts.svg?react";
-import GroupsIcon from "../../icons/sidebar/groups.svg?react";
-import StudentsIcon from "../../icons/sidebar/students.svg?react";
-import LecturersIcon from "../../icons/sidebar/lecturers.svg?react";
+import ActiveIcon from "../../icons/sidebar/active.svg";
+import ContactsIcon from "../../icons/sidebar/contacts.svg";
+import GroupsIcon from "../../icons/sidebar/groups.svg";
+import StudentsIcon from "../../icons/sidebar/students.svg";
+import LecturersIcon from "../../icons/sidebar/lecturers.svg";
 
 
 export const sidebarItems:Item[] = [

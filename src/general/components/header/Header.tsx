@@ -1,13 +1,12 @@
 import React, {useState} from 'react';
 import Search from "./search/Search.tsx";
 import style from "./header.module.css"
-import Logo from "../../../icons/header/logo.svg?react"
-import LogoutIcon from "../../../icons/header/logout.svg?react"
+import Logo from "../../../icons/header/logo.svg"
+import LogoutIcon from "../../../icons/header/logout.svg"
 import {Link} from "react-router-dom";
 
 const Header = () => {
     const [isHover, setIsHover] = useState(false);
-    const Logo = () => (<img src={"../../../images/header/logo.webp"} alt={"logo"}/>);
 
     return (
         <div className={style.box}>
