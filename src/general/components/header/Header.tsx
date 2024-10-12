@@ -6,7 +6,6 @@ import LogoutIcon from "../../../icons/header/logout.svg?react"
 import {Link} from "react-router-dom";
 
 const Header = () => {
-
     const [isHover, setIsHover] = useState(false);
 
     return (
