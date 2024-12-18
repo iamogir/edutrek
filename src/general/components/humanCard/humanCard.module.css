@@ -43,6 +43,10 @@
     align-items: center;
 }
 
+.string {
+    margin: 7px;
+}
+
 .right {
     width: 25%;
 }

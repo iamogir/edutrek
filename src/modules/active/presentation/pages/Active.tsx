@@ -8,6 +8,9 @@ const Active = () => {
     return (
        <div className={style.box}>
            {humansArray.map((el) => <HumanCard key={el.id} info={el}/>)}
+           {humansArray.map((el) => <HumanCard key={el.id} info={el}/>)}
+           {humansArray.map((el) => <HumanCard key={el.id} info={el}/>)}
+           {humansArray.map((el) => <HumanCard key={el.id} info={el}/>)}
        </div>
     );
 };

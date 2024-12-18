@@ -28,11 +28,11 @@ const HumanCard = ({info}: Props) => {
             <div className={style.body}>
                 <div className={style.block}>
                     <div>
-                        <p><PhoneIcon/>{info.phoneNum}</p>
+                        <p><PhoneIcon/><span className={style.string}>{info.phoneNum}</span></p>
                         {info.whatsApp ?
                             <Link to={"https://wa.me/" + info.phoneNum} target="_blank"><WhatsAppIcon/></Link> : <></>}
                     </div>
-                    <p><AtIcon/>{info.email}</p>
+                    <p><AtIcon/><span className={style.string}>{info.email}</span></p>
                 </div>
                 <div className={`${style.block} ${style.right}`}>
                     <p><LocationIcon/>{info.location}</p>
