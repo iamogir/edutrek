@@ -76,7 +76,7 @@ export const humansArray: HumanCardInfo[] = [
         email: "email@email.com",
         location: "Tower",
         courseAbbreviation: "FSD",
-        notify: false
+        notify: true
     },
     {
         id: 2,
@@ -111,7 +111,7 @@ export const humansArray: HumanCardInfo[] = [
         id: 5,
         name: "God Name",
         phoneNum: "+0912873465",
-        email: "ooo@ppp.pup",
+        email: "oh@my.god",
         location: "Heaven",
         courseAbbreviation: "BP",
         notify: false

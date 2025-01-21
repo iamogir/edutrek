@@ -1,7 +1,8 @@
 // import React, {useEffect} from 'react';
 import AlarmOn from "../../../../../icons/alarm/alarmOn.svg";
 import AlarmOff from "../../../../../icons/alarm/alarmOff.svg";
-import style from "./alarm.module.css"
+// import style from "./alarm.module.css"
+import {notifications} from "../../../../../general/utils/constants.ts";
 
 interface Props {
     serial: number,
@@ -37,7 +38,8 @@ const Alarm = ({serial, isNotify}: Props) => {
 
     return ( isNotify ?
         <div>
-            <p>Fri, 12.02.2024 at 12:00</p>
+            {notifications.map(n => <p key={"p" + n.notificationData.notificationId}>
+                {n.notificationData.recipientId === serial ? n.notificationData.scheduledTime : ""}</p>)}
             <AlarmOn className={"iconAlarm" + serial}/>
         </div> :
             <AlarmOff className={"iconAlarm" + serial}/>

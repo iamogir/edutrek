@@ -1,4 +1,4 @@
-import {Item} from "../interfaces.ts";
+import {Item, Notice} from "../interfaces.ts";
 import ActiveIcon from "../../icons/sidebar/active.svg";
 import ContactsIcon from "../../icons/sidebar/contacts.svg";
 import GroupsIcon from "../../icons/sidebar/groups.svg";
@@ -34,7 +34,7 @@ export const sidebarItems:Item[] = [
     }
 ];
 
-export const Notifications:Notice[] = [
+export const notifications:Notice[] = [
     {
         entityId: 1,
         notificationData: {
@@ -59,7 +59,7 @@ export const Notifications:Notice[] = [
         entityId: 3,
         notificationData: {
             notificationId: 3,
-            recipientId: 3,
+            recipientId: 1,
             scheduledTime: "Fri, 15.02.2025 at 17:00",
             entityName: "Entity Name",
             notificationText: "remind me now"
