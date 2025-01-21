@@ -34,3 +34,36 @@ export const sidebarItems:Item[] = [
     }
 ];
 
+export const Notifications:Notice[] = [
+    {
+        entityId: 1,
+        notificationData: {
+            notificationId: 1,
+            recipientId: 3,
+            scheduledTime: "Fri, 12.02.2025 at 12:00",
+            entityName: "Entity Name",
+            notificationText: "remind me"
+        }
+    },
+    {
+        entityId: 2,
+        notificationData: {
+            notificationId: 2,
+            recipientId: 4,
+            scheduledTime: "Fri, 12.02.2025 at 12:00",
+            entityName: "Entity Name",
+            notificationText: "remind me please"
+        }
+    },
+    {
+        entityId: 3,
+        notificationData: {
+            notificationId: 3,
+            recipientId: 3,
+            scheduledTime: "Fri, 15.02.2025 at 17:00",
+            entityName: "Entity Name",
+            notificationText: "remind me now"
+        }
+    }
+]
+

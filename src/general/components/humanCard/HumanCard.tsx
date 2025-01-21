@@ -1,4 +1,3 @@
-import React from 'react';
 import style from "./humanCard.module.css";
 import Point from "../../../icons/entityHuman/point.svg";
 import Alarm from "../../../modules/active/presentation/components/alarm/Alarm.tsx";
