@@ -23,7 +23,7 @@ const HumanCard = ({info}: Props) => {
                     <Point/>
                     <p className={style.name}>{info.name}</p>
                 </div>
-                <Alarm  serial={info.id}/>
+                <Alarm  serial={info.id} isNotify={info.notify}/>
             </div>
             <div className={style.body}>
                 <div className={style.block}>
