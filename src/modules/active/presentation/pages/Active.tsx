@@ -1,11 +1,16 @@
 import React from 'react';
 import style from "./active.module.css";
-import EntityHuman from "../../../entityHuman/EntityHuman.tsx";
+import HumanCard from "../../../../general/components/humanCard/HumanCard.tsx";
+import {humansArray} from "../constants.ts";
 
 const Active = () => {
+
     return (
-       <div>
-           <EntityHuman/>
+       <div className={style.box}>
+           {humansArray.map((el) => <HumanCard key={el.id} info={el}/>)}
+           {humansArray.map((el) => <HumanCard key={el.id} info={el}/>)}
+           {humansArray.map((el) => <HumanCard key={el.id} info={el}/>)}
+           {humansArray.map((el) => <HumanCard key={el.id} info={el}/>)}
        </div>
     );
 };

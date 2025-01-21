@@ -1,0 +1,52 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border-bottom: 0.5px solid #707070;
+    padding: 11px 0;
+
+}
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header > div {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.name {
+    margin-left: 5px;
+    /* UI Properties */
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-18) var(--unnamed-font-family-ubuntu);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-2b2d2f);
+    text-align: left;
+    opacity: 1;
+}
+
+.body {
+    margin-left: 16px;
+    margin-top: 12px;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block > p,
+.block > div,
+.block > div > p {
+    display: flex;
+    align-items: center;
+}
+
+.string {
+    margin: 7px;
+}
+
+.right {
+    width: 25%;
+}
