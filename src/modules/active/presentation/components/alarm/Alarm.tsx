@@ -12,9 +12,17 @@ const Alarm = ({serial}: Props) => {
 
     useEffect(() => {
         const element = document.querySelector(".iconAlarm" + serial);
-        const path = element.firstChild as Element;
-        const pathValue = path.getAttribute("d");
-        path.setAttribute("d", pathValue + fillIcon);
+        if (element) {
+            const path = element.firstChild as Element | null;
+            if (path) {
+                const pathValue = path.getAttribute("d") ?? "";
+                if (pathValue !== "")
+                    path.setAttribute("d", pathValue + fillIcon);
+            }
+        }
+        // const path = element !== null ? element.firstChild as Element : null;
+        // const pathValue = path !== null ? path.getAttribute("d") : null;
+        // path !== null ? path.setAttribute("d", pathValue + fillIcon) : null;
 
 
     }, [])
