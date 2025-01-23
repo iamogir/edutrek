@@ -1,8 +1,8 @@
 // import React, {useEffect} from 'react';
 import AlarmOn from "../../../../../icons/alarm/alarmOn.svg";
 import AlarmOff from "../../../../../icons/alarm/alarmOff.svg";
+import {notifications} from "../../constants.ts";
 // import style from "./alarm.module.css"
-import {notifications} from "../../../../../general/utils/constants.ts";
 
 interface Props {
     serial: number,

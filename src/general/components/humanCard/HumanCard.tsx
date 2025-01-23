@@ -34,7 +34,7 @@ const HumanCard = ({info}: Props) => {
                     <p><AtIcon/><span className={style.string}>{info.email}</span></p>
                 </div>
                 <div className={`${style.block} ${style.right}`}>
-                    <p><LocationIcon/><span className={style.string}>{info.location}</span></p>
+                    <p><LocationIcon className={style.icons}/><span className={style.string}>{info.location}</span></p>
                     <p><BookIcon/><span className={style.string}>{info.courseAbbreviation}</span></p>
                 </div>
             </div>
