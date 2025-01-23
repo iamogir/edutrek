@@ -5,8 +5,7 @@ export type HumanCardInfo = {
     whatsApp?: string,
     email: string,
     location: string,
-    courseAbbreviation: string,
-    notify: boolean
+    courseAbbreviation: string
 }
 
 export type Notice = {

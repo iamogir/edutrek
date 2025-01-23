@@ -75,8 +75,7 @@ export const humansArray: HumanCardInfo[] = [
         whatsApp: "+0987654321",
         email: "email@email.com",
         location: "Tower",
-        courseAbbreviation: "FSD",
-        notify: true
+        courseAbbreviation: "FSD"
     },
     {
         id: 2,
@@ -84,8 +83,7 @@ export const humansArray: HumanCardInfo[] = [
         phoneNum: "+1234567890",
         email: "no@mail.il",
         location: "City",
-        courseAbbreviation: "FSD",
-        notify: false
+        courseAbbreviation: "FSD"
     },
     {
         id: 3,
@@ -94,8 +92,7 @@ export const humansArray: HumanCardInfo[] = [
         whatsApp: "+0192837465",
         email: "post@el.com",
         location: "Earth",
-        courseAbbreviation: "QA",
-        notify: true
+        courseAbbreviation: "QA"
     },
     {
         id: 4,
@@ -104,8 +101,7 @@ export const humansArray: HumanCardInfo[] = [
         whatsApp: "+5647382910",
         email: "mail@email.il",
         location: "USA",
-        courseAbbreviation: "QA",
-        notify: true
+        courseAbbreviation: "QA"
     },
     {
         id: 5,
@@ -113,8 +109,7 @@ export const humansArray: HumanCardInfo[] = [
         phoneNum: "+0912873465",
         email: "oh@my.god",
         location: "Heaven",
-        courseAbbreviation: "BP",
-        notify: false
+        courseAbbreviation: "BP"
     }
 ];
 
