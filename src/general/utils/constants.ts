@@ -1,9 +1,10 @@
-import {Item, Notice} from "../interfaces.ts";
+import {Item} from "../interfaces.ts";
 import ActiveIcon from "../../icons/sidebar/active.svg";
 import ContactsIcon from "../../icons/sidebar/contacts.svg";
 import GroupsIcon from "../../icons/sidebar/groups.svg";
 import StudentsIcon from "../../icons/sidebar/students.svg";
 import LecturersIcon from "../../icons/sidebar/lecturers.svg";
+import {Notice} from "../components/types.ts";
 
 
 export const sidebarItems:Item[] = [

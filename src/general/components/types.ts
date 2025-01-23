@@ -8,3 +8,16 @@ export type HumanCardInfo = {
     courseAbbreviation: string,
     notify: boolean
 }
+
+export type Notice = {
+    entityId: number,
+    notificationData: NoticeData
+}
+
+export type NoticeData = {
+    notificationId: number,
+    recipientId: number,
+    scheduledTime: string,
+    entityName: string,
+    notificationText: string
+}
