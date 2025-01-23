@@ -1,5 +1,5 @@
 import DropList from "../domain/model/dropList.ts";
-import {HumanCardInfo} from "../../../general/components/types.ts";
+import {HumanCardInfo, Notice} from "../../../general/components/types.ts";
 
 export const statusArr: DropList[] = [
     {
@@ -75,8 +75,7 @@ export const humansArray: HumanCardInfo[] = [
         whatsApp: "+0987654321",
         email: "email@email.com",
         location: "Tower",
-        courseAbbreviation: "FSD",
-        notify: false
+        courseAbbreviation: "FSD"
     },
     {
         id: 2,
@@ -84,8 +83,7 @@ export const humansArray: HumanCardInfo[] = [
         phoneNum: "+1234567890",
         email: "no@mail.il",
         location: "City",
-        courseAbbreviation: "FSD",
-        notify: false
+        courseAbbreviation: "FSD"
     },
     {
         id: 3,
@@ -94,8 +92,7 @@ export const humansArray: HumanCardInfo[] = [
         whatsApp: "+0192837465",
         email: "post@el.com",
         location: "Earth",
-        courseAbbreviation: "QA",
-        notify: true
+        courseAbbreviation: "QA"
     },
     {
         id: 4,
@@ -104,16 +101,47 @@ export const humansArray: HumanCardInfo[] = [
         whatsApp: "+5647382910",
         email: "mail@email.il",
         location: "USA",
-        courseAbbreviation: "QA",
-        notify: true
+        courseAbbreviation: "QA"
     },
     {
         id: 5,
         name: "God Name",
         phoneNum: "+0912873465",
-        email: "ooo@ppp.pup",
+        email: "oh@my.god",
         location: "Heaven",
-        courseAbbreviation: "BP",
-        notify: false
+        courseAbbreviation: "BP"
+    }
+];
+
+export const notifications:Notice[] = [
+    {
+        entityId: 1,
+        notificationData: {
+            notificationId: 1,
+            recipientId: 3,
+            scheduledTime: "Fri, 12.02.2025 at 12:00",
+            entityName: "Entity Name",
+            notificationText: "remind me"
+        }
+    },
+    {
+        entityId: 2,
+        notificationData: {
+            notificationId: 2,
+            recipientId: 4,
+            scheduledTime: "Fri, 12.02.2025 at 12:00",
+            entityName: "Entity Name",
+            notificationText: "remind me please"
+        }
+    },
+    {
+        entityId: 3,
+        notificationData: {
+            notificationId: 3,
+            recipientId: 1,
+            scheduledTime: "Fri, 15.02.2025 at 17:00",
+            entityName: "Entity Name",
+            notificationText: "remind me now"
+        }
     }
 ]

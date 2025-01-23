@@ -1,8 +1,7 @@
-import React from 'react';
 import style from "./humanCard.module.css";
 import Point from "../../../icons/entityHuman/point.svg";
 import Alarm from "../../../modules/active/presentation/components/alarm/Alarm.tsx";
-import {HumanCardInfo} from "../types.ts";
+import {HumanCardInfo, Notice} from "../types.ts";
 import PhoneIcon from "../../../icons/entityHuman/phone.svg"
 import AtIcon from "../../../icons/entityHuman/at.svg"
 import WhatsAppIcon from "../../../icons/entityHuman/whatsApp.svg"
@@ -11,10 +10,11 @@ import BookIcon from "../../../icons/entityHuman/book.svg"
 import {Link} from "react-router-dom";
 
 interface Props {
-    info: HumanCardInfo
+    info: HumanCardInfo,
+    notify: Notice | undefined,
 }
 
-const HumanCard = ({info}: Props) => {
+const HumanCard = ({info, notify}: Props) => {
 
     return (
         <div className={style.box}>
@@ -23,7 +23,7 @@ const HumanCard = ({info}: Props) => {
                     <Point/>
                     <p className={style.name}>{info.name}</p>
                 </div>
-                <Alarm  serial={info.id}/>
+                <Alarm  serial={info.id} notify={notify}/>
             </div>
             <div className={style.body}>
                 <div className={style.block}>
@@ -35,8 +35,8 @@ const HumanCard = ({info}: Props) => {
                     <p><AtIcon/><span className={style.string}>{info.email}</span></p>
                 </div>
                 <div className={`${style.block} ${style.right}`}>
-                    <p><LocationIcon/>{info.location}</p>
-                    <p><BookIcon/>{info.courseAbbreviation}</p>
+                    <p><LocationIcon className={style.icons}/><span className={style.string}>{info.location}</span></p>
+                    <p><BookIcon/><span className={style.string}>{info.courseAbbreviation}</span></p>
                 </div>
             </div>
         </div>

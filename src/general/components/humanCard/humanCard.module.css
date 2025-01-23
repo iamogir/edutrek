@@ -40,13 +40,18 @@
 .block > div,
 .block > div > p {
     display: flex;
+    justify-content: start;
     align-items: center;
 }
 
 .string {
-    margin: 7px;
+    margin: 0 7px;
 }
 
 .right {
     width: 25%;
+}
+
+.icons {
+    min-width: 20px;
 }
